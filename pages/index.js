@@ -16,7 +16,7 @@ export default function home({ results }) {
     );
   };
   return (
-    <div>
+    <div className="container">
       <Seo title="Home" />
       {results?.map((movie) => (
         <div
@@ -43,9 +43,10 @@ export default function home({ results }) {
       <style jsx>{`
         .container {
           display: grid;
+          text-align: center;
           grid-template-columns: 1fr 1fr;
-          padding: 20px;
-          gap: 20px;
+          padding: 18px;
+          gap: 18px;
         }
         .movie {
           cursor: pointer;
@@ -57,10 +58,10 @@ export default function home({ results }) {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
         .movie:hover img {
-          transform: scale(1.05) translateY(-10px);
+          transform: scale(1.02) translateY(-10px);
         }
         .movie h4 {
-          font-size: 18px;
+          font-size: 25px;
           text-align: center;
         }
       `}</style>

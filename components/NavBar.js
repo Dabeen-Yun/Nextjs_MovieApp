@@ -17,7 +17,7 @@ export default function NavBar() {
       <style jsx>{`
         nav {
           display: flex;
-          gap: 10px;
+          gap: 20px;
           flex-direction: column;
           align-items: center;
           padding-top: 20px;
@@ -26,19 +26,19 @@ export default function NavBar() {
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         }
         img {
-          max-width: 100px;
-          margin-bottom: 5px;
+          max-width: 200px;
+          margin-bottom: 10px;
         }
         nav a {
           font-weight: 600;
-          font-size: 18px;
+          font-size: 30px;
         }
         .active {
           color: green;
         }
         nav div {
           display: flex;
-          gap: 10px;
+          gap: 15px;
         }
       `}</style>
     </nav>
