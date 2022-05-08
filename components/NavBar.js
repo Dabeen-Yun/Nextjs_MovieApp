@@ -34,7 +34,7 @@ export default function NavBar() {
           font-size: 18px;
         }
         .active {
-          color: tomato;
+          color: green;
         }
         nav div {
           display: flex;
