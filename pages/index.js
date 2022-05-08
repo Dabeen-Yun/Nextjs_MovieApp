@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Seo from "../components/Seo";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -21,7 +20,7 @@ export default function home({ results }) {
       <Seo title="Home" />
       {results?.map((movie) => (
         <div
-          onClick={() => onClick(movie.id, movie.original_title)}
+          onClick={() => onClick(movie.original_title, movie.id)}
           className="movie"
           key={movie.id}
         >
